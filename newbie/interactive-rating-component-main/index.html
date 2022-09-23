@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <article class="card">
+      <header class="card__header">
+        <img src="./images/icon-star.svg" alt="Icon Star" class="card__star" />
+      </header>
+      <section class="card__body">
+        <h2 class="card__title">How did we do?</h2>
+        <p class="card__text">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <ul class="card__rating-state">
+          <li class="card__rating-number">1</li>
+          <li class="card__rating-number">2</li>
+          <li class="card__rating-number">3</li>
+          <li class="card__rating-number">4</li>
+          <li class="card__rating-number">5</li>
+        </ul>
+        <button class="card__submit">Submit</button>
+      </section>
+    </article>
+    <script src="src/script.js"></script>
+  </body>
+</html>
