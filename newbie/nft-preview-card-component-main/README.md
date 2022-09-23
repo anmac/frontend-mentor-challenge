@@ -1,6 +1,6 @@
-# Frontend Mentor - Interactive rating component solution
+# Frontend Mentor - NFT preview card component solution
 
-This is a solution to the [Interactive rating component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/interactive-rating-component-koxpeBUmI).
+This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -21,10 +21,8 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 Users should be able to:
 
-- View the optimal layout for the app depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Select and submit a number rating
-- See the "Thank you" card state after submitting a rating
+- View the optimal layout depending on their device's screen size
+- See hover states for interactive elements
 
 ### Screenshot
 
@@ -33,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution - this repo](#overview)
-- [Live site](https://anmac.github.io/frontend-mentor-challenge/newbie/interactive-rating-component-main/)
+- [Live site](https://anmac.github.io/frontend-mentor-challenge/newbie/nft-preview-card-component-main/)
 
 ## My process
 
@@ -50,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-I learned semantic html and custom properties with css using a graph tools to write clean code. I use [neovim](https://neovim.io/) as my IDE btw.
+Animation xd
 
 ### Continued development
 
