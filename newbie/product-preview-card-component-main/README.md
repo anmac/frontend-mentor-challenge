@@ -30,7 +30,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution - this repo](#)
+- [Solution - this repo](#overview)
 - [Live site](https://anmac.github.io/frontend-mentor-challenge/newbie/product-preview-card-component-main/)
 
 ## My process
