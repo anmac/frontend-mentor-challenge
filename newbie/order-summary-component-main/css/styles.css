@@ -1,0 +1,165 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --shadow-pale-blue: hsl(225, 100%, 92%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --hover-bright-blue: hsl(245, 75%, 62%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: var(--pale-blue);
+  color: var(--desaturated-blue);
+}
+
+body::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  content: url(../images/pattern-background-mobile.svg);
+}
+
+.card {
+  position: relative;
+  width: 88%;
+  max-width: 450px;
+  border-radius: 1.2em;
+  overflow: hidden;
+  box-shadow: 0px 15px 55px -30px var(--desaturated-blue);
+  background-color: #fff;
+}
+
+.card__logo {
+  width: 100%;
+}
+
+.card__body {
+  padding: 2em 1.6em 1.2em;
+  text-align: center;
+}
+
+.card__title {
+  margin: 0;
+  font-weight: 900;
+  color: var(--dark-blue);
+}
+
+.card__text {
+  width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+  line-height: 1.6;
+}
+
+.card__details {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  border-radius: 0.8em;
+  background-color: var(--very-pale-blue);
+}
+
+.card__details {
+  padding: 1.2em 0;
+  margin: 1.6em 0;
+  font-size: 0.9rem;
+}
+
+.card__plan {
+  margin-right: 2em;
+}
+
+.card__plan p {
+  margin: 0;
+}
+
+.card__change {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--bright-blue);
+  cursor: pointer;
+}
+
+.card__button {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.8em;
+  font-size: 0.9rem;
+  font-weight: 900;
+  background-color: transparent;
+  color: inherit;
+  cursor: pointer;
+}
+
+.card__button--payment {
+  margin-bottom: 1em;
+  box-shadow: 0px 24px 15px 2px var(--shadow-pale-blue);
+  background-color: var(--bright-blue);
+  color: var(--very-pale-blue);
+}
+
+.card__plan p:first-child {
+  margin-bottom: 0.4em;
+  color: var(--dark-blue);
+  font-weight: 900;
+}
+
+@media screen and (min-width: 1440px) {
+  body::before {
+    content: url(../images/pattern-background-desktop.svg);
+  }
+
+  .card__body {
+    padding: 3em 3em 2em;
+  }
+
+  .card__title {
+    font-size: 28px;
+  }
+
+  .card__details {
+    justify-content: space-around;
+    padding: 1.4em 0.9em;
+    margin-bottom: 2em;
+    font-size: 1rem;
+  }
+
+  .card__plan {
+    margin-right: 4em;
+  }
+
+  .card__change {
+    font-size: 0.9em;
+  }
+
+  .card__change:hover {
+    color: var(--hover-bright-blue);
+    text-decoration: none;
+  }
+
+  .card__button:hover {
+    color: var(--dark-blue);
+  }
+
+  .card__button--payment:hover {
+    background-color: var(--hover-bright-blue);
+    color: var(--pale-blue);
+  }
+}

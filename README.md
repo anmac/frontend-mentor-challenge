@@ -12,6 +12,7 @@ This is a solutions repo and links for each of them for [Frontend Mentor](https:
 | 2. [Interactive rating component](https://anmac.github.io/frontend-mentor-challenge/newbie/interactive-rating-component-main/) |[Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/interactive-rating-component-main/)
 | 3. [QR code component](https://anmac.github.io/frontend-mentor-challenge/newbie/qr-code-component-main/) |[Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/qr-code-component-main/)|
 | 4. [NFT preview card component](https://anmac.github.io/frontend-mentor-challenge/newbie/nft-preview-card-component-main/) |[Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/nft-preview-card-component-main/)
+| 5. [Order summary component](https://anmac.github.io/frontend-mentor-challenge/newbie/order-summary-component-main/) |[Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/order-summary-component-main/)
 
 ### [Junior](#junior)
 
