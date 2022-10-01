@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>FAQ Accordion Card</title>
+  </head>
+  <body>
+    <article class="card">
+      <header class="card__header">
+        <picture>
+          <source
+            srcset="./images/illustration-woman-online-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./images/illustration-woman-online-mobile.svg"
+            alt="Illustration Woman Online"
+            class="card__illustration"
+          />
+        </picture>
+        <picture>
+          <source
+            srcset="./images/bg-pattern-desktop.svg"
+            media="(min-width: 1024px)"
+          />
+          <img
+            src="./images/bg-pattern-mobile.svg"
+            alt="Background Pattern"
+            class="card__bg-pattern"
+          />
+        </picture>
+      </header>
+      <section class="card__body">
+        <h2 class="card__title">FAQ</h2>
+        <details class="card__faq-content">
+          <summary class="card__faq-question">
+            How many team members can I invite?
+          </summary>
+          <p class="card__faq-answer">
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
+        <details class="card__faq-content">
+          <summary class="card__faq-question">
+            What is the maximum file upload size?
+          </summary>
+          <p class="card__faq-answer">
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
+        <details class="card__faq-content">
+          <summary class="card__faq-question">
+            How do I reset my password?
+          </summary>
+          <p class="card__faq-answer">
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
+        <details class="card__faq-content">
+          <summary class="card__faq-question">
+            Can I cancel my subscription?
+          </summary>
+          <p class="card__faq-answer">
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </details>
+        <details class="card__faq-content">
+          <summary class="card__faq-question">
+            Do you provide additional support?
+          </summary>
+          <p class="card__faq-answer">
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </details>
+      </section>
+    </article>
+    <!-- <script src="./js/script.js"></script> -->
+  </body>
+</html>
