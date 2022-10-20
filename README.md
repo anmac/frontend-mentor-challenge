@@ -1,6 +1,6 @@
 # My Frontend Mentor Solutions
 
-This is a solutions repo and links for each of them for [Frontend Mentor](https://wwww.frontendmentor.io/) challenges.
+This is a solutions repo and links for each of them for [Frontend Mentor](https://www.frontendmentor.io/) challenges.
 
 ## List of Projects
 
