@@ -1,0 +1,22 @@
+@use "../base/root";
+@use "header";
+@use "rating";
+
+.Main {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem auto;
+
+  .RatingList {
+    text-align: center;
+  }
+}
+
+@include root.media(1024px) {
+  .Main {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-bottom: 4rem;
+  }
+}

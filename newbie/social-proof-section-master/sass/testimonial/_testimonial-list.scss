@@ -1,0 +1,24 @@
+@use "../base/root";
+@use "testimonial";
+
+.TestimonialList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+@include root.media(768px) {
+  .TestimonialList {
+    min-height: 720px;
+  }
+}
+
+@include root.media(1024px) {
+  .TestimonialList {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 227px;
+    max-width: 1120px;
+  }
+}

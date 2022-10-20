@@ -1,0 +1,70 @@
+@use "../base/root";
+@use "user";
+
+.Testimonial {
+  max-width: 350px;
+  margin: {
+    top: 1rem;
+    right: auto;
+    left: auto;
+  }
+  padding: 2.2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: root.$vd-magenta;
+  color: root.$white;
+
+  &__text {
+    margin: 0;
+    line-height: 1.4;
+  }
+}
+
+@include root.media(768px) {
+  .Testimonial {
+    position: absolute;
+    margin-top: 0;
+
+    &--first {
+      top: 0;
+      left: -2rem;
+    }
+
+    &--second {
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--third {
+      right: -2rem;
+      bottom: 0;
+    }
+  }
+}
+
+@include root.media(1024px) {
+  .Testimonial {
+    position: relative;
+    min-height: 230px;
+    margin: 0;
+
+    &--first {
+      top: -2rem;
+      left: unset;
+    }
+
+    &--second {
+      top: unset;
+      left: unset;
+      transform: translate(0, 0);
+    }
+
+    &--third {
+      right: unset;
+      bottom: -2rem;
+    }
+  }
+}

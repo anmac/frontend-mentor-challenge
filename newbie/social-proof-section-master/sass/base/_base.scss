@@ -1,0 +1,27 @@
+@use "root";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// - Family: [League Spartan](https://fonts.google.com/specimen/League+Spartan)
+// - Weights: 400, 500, 700
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 34px 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  color: root.$vd-magenta;
+  background-color: root.$white;
+}
+
+body > main,
+body > section {
+  width: 88%;
+}

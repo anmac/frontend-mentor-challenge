@@ -17,6 +17,7 @@ This is a solutions repo and links for each of them for [Frontend Mentor](https:
 | 7. [3-column preview card component](https://anmac.github.io/frontend-mentor-challenge/newbie/3-column-preview-card-component-main/) |[Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/3-column-preview-card-component-main/)
 | 8. [Profile card component](https://anmac.github.io/frontend-mentor-challenge/newbie/profile-card-component-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/profile-card-component-main/)
 | 9. [FAQ accordion card](https://anmac.github.io/frontend-mentor-challenge/newbie/faq-accordion-card-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/faq-accordion-card-main/)
+| 10. [Social proof section](https://anmac.github.io/frontend-mentor-challenge/newbie/social-proof-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/social-proof-section-main/)
 
 ### [Junior](#junior)
 

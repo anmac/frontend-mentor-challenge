@@ -1,0 +1,30 @@
+@use "../base/root";
+
+.User {
+  display: flex;
+  margin-bottom: 1.6rem;
+
+  &__image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  &__info {
+    margin-left: 1.4rem;
+  }
+
+  &__name,
+  &__category {
+    margin: 0;
+  }
+
+  &__name {
+    margin-bottom: 4px;
+    font-weight: 700;
+  }
+
+  &__category {
+    color: root.$pink;
+  }
+}

@@ -1,0 +1,264 @@
+:root {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: 34px 0;
+  font-family: "League Spartan", sans-serif;
+  font-size: 15px;
+  color: var(--very-dark-magenta);
+  background-color: var(--white);
+}
+
+body > main,
+body > section {
+  width: 88%;
+}
+
+.BgPattern {
+  position: absolute;
+}
+
+.BgPattern--top {
+  top: 0;
+  left: 0;
+}
+
+.BgPattern--bottom {
+  bottom: 0;
+  right: 0;
+}
+
+.Header {
+  text-align: center;
+}
+.Header__title {
+  width: 12ch;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 2.6rem;
+  letter-spacing: -1px;
+  line-height: 0.8;
+}
+.Header__description {
+  max-width: 420px;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--dark-grayish-magenta);
+}
+
+@media screen and (min-width: 1024px) {
+  .Header {
+    text-align: left;
+  }
+  .Header__title {
+    margin-left: 0;
+    font-size: 3.4rem;
+  }
+  .Header__description {
+    width: 468px;
+  }
+}
+.Rating {
+  max-width: 500px;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-bottom: 1rem;
+  margin-left: auto;
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: var(--light-grayish-magenta);
+}
+.Rating__star-list {
+  margin-bottom: 8px;
+}
+.Rating__star {
+  display: inline-block;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+.Rating__text {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+  .Rating {
+    position: absolute;
+    min-width: 100%;
+    padding: 1.2rem 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .Rating__star-list {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .Rating__star {
+    vertical-align: text-bottom;
+  }
+  .Rating__text {
+    margin-left: 1.4rem;
+  }
+  .Rating--first {
+    top: 14%;
+    left: -6rem;
+  }
+  .Rating--second {
+    top: 50%;
+    left: -3rem;
+    transform: translate(0, -50%);
+  }
+  .Rating--third {
+    bottom: 14%;
+    right: 0;
+  }
+}
+.Main {
+  display: flex;
+  flex-direction: column;
+  margin: 1.2rem auto;
+}
+.Main .RatingList {
+  text-align: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .Main {
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin-bottom: 4rem;
+  }
+}
+.RatingList {
+  position: relative;
+}
+
+@media screen and (min-width: 1024px) {
+  .RatingList {
+    top: 1rem;
+    min-width: 430px;
+    height: 285px;
+  }
+}
+.User {
+  display: flex;
+  margin-bottom: 1.6rem;
+}
+.User__image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.User__info {
+  margin-left: 1.4rem;
+}
+.User__name, .User__category {
+  margin: 0;
+}
+.User__name {
+  margin-bottom: 4px;
+  font-weight: 700;
+}
+.User__category {
+  color: var(--soft-pink);
+}
+
+.Testimonial {
+  max-width: 350px;
+  margin-top: 1rem;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  font-weight: 500;
+  font-size: 1rem;
+  background-color: var(--very-dark-magenta);
+  color: var(--white);
+}
+.Testimonial__text {
+  margin: 0;
+  line-height: 1.4;
+}
+
+@media screen and (min-width: 768px) {
+  .Testimonial {
+    position: absolute;
+    margin-top: 0;
+  }
+  .Testimonial--first {
+    top: 0;
+    left: -2rem;
+  }
+  .Testimonial--second {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .Testimonial--third {
+    right: -2rem;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .Testimonial {
+    position: relative;
+    min-height: 230px;
+    margin: 0;
+  }
+  .Testimonial--first {
+    top: -2rem;
+    left: unset;
+  }
+  .Testimonial--second {
+    top: unset;
+    left: unset;
+    transform: translate(0, 0);
+  }
+  .Testimonial--third {
+    right: unset;
+    bottom: -2rem;
+  }
+}
+.TestimonialList {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .TestimonialList {
+    min-height: 720px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .TestimonialList {
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 227px;
+    max-width: 1120px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

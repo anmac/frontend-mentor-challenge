@@ -1,0 +1,14 @@
+@use "../base/root";
+@use "rating";
+
+.RatingList {
+  position: relative;
+}
+
+@include root.media(1024px) {
+  .RatingList {
+    top: 1rem;
+    min-width: 430px;
+    height: 285px;
+  }
+}

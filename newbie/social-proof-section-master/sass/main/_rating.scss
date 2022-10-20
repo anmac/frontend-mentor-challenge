@@ -1,0 +1,73 @@
+@use "../base/root";
+
+.Rating {
+  max-width: 500px;
+  margin: {
+    top: 1rem;
+    right: auto;
+    bottom: 1rem;
+    left: auto;
+  }
+  padding: 1rem;
+  border-radius: 0.4rem;
+  background-color: root.$lg-magenta;
+
+  &__star-list {
+    margin-bottom: 8px;
+  }
+
+  &__star {
+    display: inline-block;
+    margin: {
+      right: 2px;
+      left: 2px;
+    }
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 1rem;
+  }
+}
+
+@include root.media(1024px) {
+  .Rating {
+    position: absolute;
+    min-width: 100%;
+    padding: 1.2rem 2rem;
+    margin: {
+      top: 0;
+      bottom: 0;
+    }
+    text-align: left;
+
+    &__star-list {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+
+    &__star {
+      vertical-align: text-bottom;
+    }
+
+    &__text {
+      margin-left: 1.4rem;
+    }
+
+    &--first {
+      top: 14%;
+      left: -6rem;
+    }
+
+    &--second {
+      top: 50%;
+      left: -3rem;
+      transform: translate(0, -50%);
+    }
+
+    &--third {
+      bottom: 14%;
+      right: 0;
+    }
+  }
+}
