@@ -1,0 +1,291 @@
+:root {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+  --bg-card: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* - Family: [Manrope](https://fonts.google.com/specimen/Manrope) */
+/* - Weights: 500, 700 */
+
+body {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  background-color: var(--light-grayish-blue);
+}
+
+/* -------------- */
+/* Card Container */
+/* -------------- */
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 88%;
+  max-width: 330px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 0.6rem;
+  background-color: var(--bg-card);
+  box-shadow: 0px 40px 50px -10px rgba(0, 0, 0, 0.1);
+}
+
+/* ----------- */
+/* Card Header */
+/* ----------- */
+
+.card__header {
+  position: relative;
+  width: 100%;
+  height: 204px;
+  overflow: hidden;
+}
+
+.card__drawers {
+  position: absolute;
+  top: -15px;
+  width: 100%;
+}
+
+/* --------- */
+/* Card Body */
+/* --------- */
+
+.card__body {
+  padding-top: 1.2rem;
+}
+
+.card__title,
+.card__content {
+  padding: 0 2rem;
+}
+
+.card__title {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--very-dark-grayish-blue);
+}
+
+.card__content {
+  /* margin: 0; */
+  line-height: 1.5;
+  word-spacing: 1px;
+  color: var(--desaturated-dark-blue);
+}
+
+/* ----------- */
+/* Card Footer */
+/* ----------- */
+
+.card__footer {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+/* ---- */
+/* User */
+/* ---- */
+
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.user__info {
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  flex-direction: column;
+}
+
+.user__info * {
+  margin: 0;
+}
+
+.user__name {
+  font-weight: 700;
+  color: var(--very-dark-grayish-blue);
+}
+
+.user__date {
+  color: var(--grayish-blue);
+}
+
+/* ---- */
+/* Icon */
+/* ---- */
+
+.icon-box {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  border: 0;
+  border-radius: 50%;
+  background-color: var(--light-grayish-blue);
+  transition: all 0.2s ease;
+}
+
+.icon-share {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 15px;
+  height: 13px;
+}
+
+.icon-box:hover {
+  background-color: var(--grayish-blue);
+}
+
+/* ----- */
+/* Share */
+/* ----- */
+
+.share {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 1.2rem 2rem 1.2rem;
+}
+
+.share[toggle] {
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.share-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-grayish-blue);
+  color: var(--grayish-blue);
+}
+
+.share-icons p {
+  letter-spacing: 5px;
+}
+
+.share-icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.icon-box[checked] {
+  background-color: var(--desaturated-dark-blue);
+}
+
+@media screen and (min-width: 1024px) {
+  .card {
+    flex-direction: row;
+    max-width: 730px;
+    height: 280px;
+    overflow: initial;
+  }
+
+  .card__header {
+    width: 99%;
+    height: 100%;
+    border-radius: 0.6rem 0 0 0.6rem;
+  }
+
+  .card__drawers {
+    position: initial;
+    width: auto;
+    height: 100%;
+  }
+
+  .card__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    height: 100%;
+  }
+
+  .card__title {
+    margin: 1.4rem 0 0.8rem;
+    font-size: 1.28rem;
+    line-height: 1.4;
+  }
+
+  .card__content {
+    margin: 0;
+  }
+
+  .card__title,
+  .card__content {
+    padding-right: 3.2rem;
+    padding-left: 2.4rem;
+  }
+
+  .share {
+    padding-right: 2.5rem;
+    padding-left: 2.4rem;
+  }
+
+  .triangle {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    border-left: 0.8rem solid transparent;
+    border-right: 0.8rem solid transparent;
+    border-top: 0.8rem solid var(--very-dark-grayish-blue);
+  }
+
+  .share[preview] {
+    position: absolute;
+    top: -60px;
+    left: 265px;
+    width: 250px;
+    height: 56px;
+    border-radius: 0.6rem;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.1);
+    animation: preview 0.3s ease;
+  }
+
+  .share-icons img:hover {
+    scale: 0.9;
+  }
+
+  @keyframes preview {
+    0% {
+      opacity: 0;
+      scale: 0.9;
+    }
+    100% {
+      opacity: 1;
+      scale: 1;
+    }
+  }
+}
