@@ -20,6 +20,7 @@ This is a solutions repo and links for each of them for [Frontend Mentor](https:
 | 10. [Social proof section](https://anmac.github.io/frontend-mentor-challenge/newbie/social-proof-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/social-proof-section-main/)
 | 11. [Article preview component](https://anmac.github.io/frontend-mentor-challenge/newbie/article-preview-component-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/article-preview-component-main/)
 | 12. [Huddle landing page with a single introductory section](https://anmac.github.io/frontend-mentor-challenge/newbie/huddle-landing-page-with-single-introductory-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/huddle-landing-page-with-single-introductory-section-main/)
+| 13. [Four card feature section](https://anmac.github.io/frontend-mentor-challenge/newbie/four-card-feature-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/four-card-feature-section-main/)
 
 ### [Junior](#junior)
 

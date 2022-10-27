@@ -1,0 +1,163 @@
+:root {
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --very-dark-blue: hsl(234, 12%, 34%);
+  --grayish-blue: hsl(229, 6%, 66%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* - Weights: 200, 400, 600 */
+
+body {
+  width: 86%;
+  min-height: 100vh;
+  padding: 1rem 0 2rem;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--very-light-gray);
+}
+
+.header {
+  max-width: 540px;
+  margin: auto;
+  margin-bottom: 4rem;
+}
+
+.title {
+  max-width: 325px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 200;
+  font-size: 1.6em;
+  color: var(--very-dark-blue);
+}
+
+.title--bold {
+  font-weight: 600;
+}
+
+.description {
+  text-align: center;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--grayish-blue);
+}
+
+/* Main */
+
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  place-content: center;
+  place-items: center;
+  gap: 1.5rem;
+  max-width: 1440px;
+  margin: auto;
+}
+
+/* Card */
+
+.card {
+  position: relative;
+  min-width: 320px;
+  max-width: 340px;
+  min-height: 225px;
+  padding: 2rem;
+  border-radius: 0.4rem;
+  background-color: var(--white);
+  box-shadow: 0px 4px 12px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card--cyan {
+  border-top: 4px solid var(--cyan);
+}
+
+.card--red {
+  border-top: 4px solid var(--red);
+}
+
+.card--orange {
+  border-top: 4px solid var(--orange);
+}
+
+.card--blue {
+  border-top: 4px solid var(--blue);
+}
+
+.card__title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.32em;
+  color: var(--very-dark-blue);
+}
+
+.card__content {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 0.84em;
+  word-spacing: 1px;
+  color: var(--grayish-blue);
+}
+
+.card__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transform: translate(-32px, -32px);
+  width: 3.8em;
+  height: 3.8em;
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    padding: 3rem 0;
+  }
+
+  .title {
+    max-width: 500px;
+    font-size: 2.4em;
+    line-height: 1.4;
+  }
+
+  .main {
+    grid-template:
+      "cyan red blue"
+      "cyan orange blue";
+    gap: 2rem;
+  }
+
+  .card {
+    height: 240px;
+    box-shadow: 0px 12px 20px -8px hsl(212, 20%, 80%);
+  }
+
+  .card--cyan {
+    grid-area: cyan;
+  }
+
+  .card--red {
+    grid-area: red;
+  }
+
+  .card--orange {
+    grid-area: orange;
+  }
+
+  .card--blue {
+    grid-area: blue;
+  }
+
+  .card__icon {
+    width: 4em;
+    height: 4em;
+  }
+}
