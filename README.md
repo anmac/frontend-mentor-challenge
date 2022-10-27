@@ -19,6 +19,7 @@ This is a solutions repo and links for each of them for [Frontend Mentor](https:
 | 9. [FAQ accordion card](https://anmac.github.io/frontend-mentor-challenge/newbie/faq-accordion-card-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/faq-accordion-card-main/)
 | 10. [Social proof section](https://anmac.github.io/frontend-mentor-challenge/newbie/social-proof-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/social-proof-section-main/)
 | 11. [Article preview component](https://anmac.github.io/frontend-mentor-challenge/newbie/article-preview-component-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/article-preview-component-main/)
+| 12. [Huddle landing page with a single introductory section](https://anmac.github.io/frontend-mentor-challenge/newbie/huddle-landing-page-with-single-introductory-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/huddle-landing-page-with-single-introductory-section-main/)
 
 ### [Junior](#junior)
 
