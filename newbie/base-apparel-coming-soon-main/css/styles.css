@@ -1,0 +1,291 @@
+:root {
+  --desaturated-red: hsl(0, 36%, 70%);
+  --soft-red: hsl(0, 93%, 60%);
+  --dark-grayish-red: hsl(0, 6%, 24%);
+  --linear-gradient-white: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%),
+    hsl(0, 100%, 98%)
+  );
+  --linear-gradient-red: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%),
+    hsl(0, 74%, 74%)
+  );
+  --linear-gradient-red-hover: linear-gradient(
+    135deg,
+    hsl(0, 80%, 92%) 40%,
+    hsl(0, 93%, 88%)
+  );
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: grid;
+  align-content: flex-start;
+  min-height: 100vh;
+  padding-bottom: 2rem;
+  font-family: "Josefin Sans", sans-serif;
+  background-image: var(--linear-gradient-white);
+}
+
+/*--------*/
+/* Header */
+/*--------*/
+
+.header {
+  width: 82%;
+  max-width: 430px;
+  height: 24vmin;
+  max-height: 180px;
+  margin: auto;
+  background-image: url(../images/logo.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32%;
+}
+
+/*------*/
+/* Hero */
+/*------*/
+
+.hero {
+  margin-bottom: 2rem;
+}
+
+.hero__image {
+  width: 100%;
+}
+
+/*------*/
+/* Main */
+/*------*/
+
+.title {
+  width: 12ch;
+  max-width: 430px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-size: 2.55rem;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  line-height: 1.1;
+  color: var(--desaturated-red);
+}
+
+.title--bold {
+  font-weight: 600;
+  color: var(--dark-grayish-red);
+}
+
+.description {
+  width: 82%;
+  max-width: 430px;
+  margin: auto;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  color: var(--desaturated-red);
+}
+
+/*------*/
+/* Form */
+/*------*/
+
+.form {
+  position: relative;
+  width: 84%;
+  max-width: 430px;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.input {
+  width: 100%;
+  padding: 0.9em 1.4em;
+  border: 1px solid var(--desaturated-red);
+  border-radius: 3rem;
+  opacity: 0.6;
+  background-color: transparent;
+}
+
+.input:focus {
+  outline: 1px solid var(--desaturated-red);
+}
+
+.input::placeholder {
+  color: var(--desaturated-red);
+  font-size: 0.9rem;
+}
+
+.button {
+  position: absolute;
+  right: 0;
+  width: 21%;
+  height: 100%;
+  border: none;
+  border-radius: 2rem;
+  background-image: var(--linear-gradient-red);
+  box-shadow: 0px 12px 12px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.button:focus {
+  outline: 1px solid var(--desaturated-red);
+}
+
+.button__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*---------*/
+/* Success */
+/*---------*/
+
+.form.success::after {
+  position: absolute;
+  content: attr(data-success);
+  top: 120%;
+  left: calc(1.4em + 6px);
+  font-size: 1em;
+  color: var(--desaturated-red);
+}
+
+.success .button__icon {
+  animation: success-icon 0.5s ease;
+}
+
+@keyframes success-icon {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg) scale(0.8);
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg) scale(1);
+    opacity: 1;
+  }
+}
+
+/*-------*/
+/* Error */
+/*-------*/
+
+.form.error::before {
+  position: absolute;
+  content: url(../images/icon-error.svg);
+  top: calc(50% - 12px);
+  right: 24%;
+  z-index: 1;
+  width: 24px;
+  height: 24px;
+  animation: error-icon 0.3s ease;
+}
+
+.form.error::after {
+  position: absolute;
+  content: attr(data-error);
+  top: 120%;
+  left: calc(1.4em + 6px);
+  font-size: 0.8em;
+  color: var(--soft-red);
+}
+
+@keyframes error-icon {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    transform: scale(1.2, 0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.error .input {
+  border: 2px solid var(--soft-red);
+}
+
+/*---------------*/
+/* Media Queries */
+/*---------------*/
+
+@media screen and (min-width: 768px) {
+  body {
+    grid-template:
+      "header hero" 180px
+      "main   hero" 1fr
+      / calc(50% + 6rem) 1fr;
+    align-content: center;
+    padding-bottom: 0;
+    overflow: hidden;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .header {
+    grid-area: header;
+    background-size: 38%;
+  }
+
+  .hero {
+    grid-area: hero;
+    align-self: center;
+    margin: 0;
+  }
+
+  .main {
+    grid-area: main;
+    align-self: flex-start;
+    margin-top: 1vw;
+  }
+
+  .title {
+    text-align: left;
+    font-size: 4.2rem;
+    letter-spacing: 1rem;
+  }
+
+  .description {
+    text-align: left;
+    font-size: 1rem;
+  }
+
+  .input {
+    font-size: 1rem;
+  }
+
+  .input::placeholder {
+    font-size: 1rem;
+  }
+
+  .button {
+    width: 22%;
+  }
+
+  .button:hover {
+    background-image: var(--linear-gradient-red-hover);
+    box-shadow: 0px 12px 12px 6px rgba(0, 0, 0, 0.1),
+      0px 6px 12px 4px rgba(0, 0, 0, 0.1);
+  }
+}
