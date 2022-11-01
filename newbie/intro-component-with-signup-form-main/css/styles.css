@@ -1,0 +1,251 @@
+:root {
+  --red: hsl(0, 100%, 74%);
+  --green: hsl(154, 59%, 51%);
+  --green-hover: hsl(154, 59%, 68%);
+  --blue: hsl(248, 32%, 49%);
+  --dark-blue: hsl(249, 10%, 26%);
+  --grayish-blue: hsl(246, 25%, 77%);
+  --grayish-blue-light: hsl(246, 25%, 90%);
+}
+
+/* Weights: 400, 500, 600, 700 */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 3.2rem;
+  min-height: 100vh;
+  padding: 2rem 0;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  color: #fff;
+  background-color: var(--red);
+  background-image: url(../images/bg-intro-mobile.png);
+}
+
+/*--------*/
+/* Header */
+/*--------*/
+
+.header {
+  margin: auto 0;
+}
+
+.title {
+  width: 15ch;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: min(max(1.6rem, 4vw), 3.1rem);
+  line-height: min(max(2.2rem, 3.8vw), 3.5rem);
+}
+
+.paragraph {
+  width: 32ch;
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: 600;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+/*------*/
+/* Main */
+/*------*/
+
+.main {
+  width: 88%;
+  max-width: 540px;
+}
+
+.offer {
+  padding: 1.08em;
+  margin-bottom: 1.4rem;
+  border-radius: 10px;
+  background-color: var(--blue);
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.14);
+}
+
+.offer__text {
+  width: 70%;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.offer__text--bold {
+  font-weight: 700;
+}
+
+/*------*/
+/* Form */
+/*------*/
+
+.form {
+  padding: min(6.5vw, 2.8em);
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.14);
+  font-size: 0.9rem;
+}
+
+.input-block {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 1.2rem 7%;
+  margin-bottom: min(max(1rem, 1.4vw), 1.2rem);
+  border: 1px solid var(--grayish-blue-light);
+  border-radius: 5px;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.input:focus {
+  outline: 1px solid var(--grayish-blue);
+}
+
+.input::placeholder {
+  opacity: 0.6;
+  font-weight: 600;
+  color: var(--dark-blue);
+}
+
+.button {
+  position: relative;
+  width: 100%;
+  padding: 1.1em 0;
+  margin-bottom: 1rem;
+  border: 0;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.04rem;
+  background-color: var(--green);
+  box-shadow: 0px -4px 0px 0px rgba(0, 0, 0, 0.14) inset;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.1s ease;
+}
+
+.button:focus {
+  outline: 1px solid var(--green);
+}
+
+.button:hover {
+  background-color: var(--green-hover);
+}
+
+.button:active {
+  top: 4px;
+  box-shadow: none;
+}
+
+.terms {
+  width: 90%;
+  margin: 0 auto;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.7;
+  color: var(--grayish-blue);
+}
+
+.terms--bold {
+  font-weight: 700;
+  color: var(--red);
+}
+
+/*------------------------*/
+/* Empty, Error & Success */
+/*------------------------*/
+
+.input-block.empty,
+.input-block.error {
+  margin-bottom: 1.8em;
+}
+
+.input-block.empty::before,
+.input-block.error::before,
+.input-block.success::before {
+  position: absolute;
+  top: calc(50% - 19px);
+  right: 6%;
+  width: 24px;
+  height: 24px;
+  content: url(../images/icon-error.svg);
+  animation: error-icon 0.3s ease;
+}
+
+.input-block.success::before {
+  content: url(../images/icon-success.svg);
+}
+
+.input-block.empty::after,
+.input-block.error::after {
+  position: absolute;
+  right: 0;
+  bottom: -4px;
+  content: attr(data-empty);
+  color: var(--red);
+  font-size: 0.78em;
+  font-style: italic;
+  font-weight: 500;
+}
+
+.input-block.error::after {
+  content: attr(data-error);
+}
+
+.empty .input,
+.error .input {
+  border: 2px solid var(--red);
+  color: var(--red);
+}
+
+.empty .input::placeholder {
+  opacity: 0;
+}
+
+@keyframes error-icon {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+  25% {
+    opacity: 1;
+    transform: scale(0.8, 1.3);
+  }
+  50% {
+    transform: scale(1.2, 0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  body {
+    background-image: url(../images/bg-intro-desktop.png);
+  }
+
+  .title {
+    margin-left: 0;
+    text-align: left;
+  }
+
+  .paragraph {
+    width: 50ch;
+    margin-left: 0;
+    text-align: left;
+  }
+}

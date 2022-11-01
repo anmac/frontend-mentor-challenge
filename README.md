@@ -22,6 +22,7 @@ This is a solutions repo and links for each of them for [Frontend Mentor](https:
 | 12. [Huddle landing page with a single introductory section](https://anmac.github.io/frontend-mentor-challenge/newbie/huddle-landing-page-with-single-introductory-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/huddle-landing-page-with-single-introductory-section-main/)
 | 13. [Four card feature section](https://anmac.github.io/frontend-mentor-challenge/newbie/four-card-feature-section-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/four-card-feature-section-main/)
 | 14. [Base Apparel coming soon page](https://anmac.github.io/frontend-mentor-challenge/newbie/base-apparel-coming-soon-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/base-apparel-coming-soon-main/)
+| 15. [Intro component with sign-up form](https://anmac.github.io/frontend-mentor-challenge/newbie/intro-component-with-signup-form-main/) | [Project](https://github.com/anmac/frontend-mentor-challenge/tree/master/newbie/intro-component-with-signup-form-main/)
 
 ### [Junior](#junior)
 
