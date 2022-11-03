@@ -1,6 +1,6 @@
-# Frontend Mentor - Social proof section solution
+# Frontend Mentor - Single price grid component solution
 
-This is a solution to the [Social proof section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [Single price grid component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -21,7 +21,8 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 
 Users should be able to:
 
-- View the optimal layout for the section depending on their device's screen size
+- View the optimal layout for the component depending on their device's screen size
+- See a hover state on desktop for the Sign Up call-to-action
 
 ### Screenshot
 
@@ -30,7 +31,7 @@ Users should be able to:
 ### Links
 
 - [Solution - this repo](#overview)
-- [Live site](https://anmac.github.io/frontend-mentor-challenge/newbie/social-proof-section-main/)
+- [Live site](https://anmac.github.io/frontend-mentor-challenge/newbie/single-price-grid-component-main/)
 
 ## My process
 
@@ -47,7 +48,7 @@ Users should be able to:
 
 ### What I learned
 
-CSS Grid with [Sass](https://sass-lang.com/). I use [neovim](https://neovim.io) as my IDE btw.
+Simple layout with no media queries. I use [neovim](https://neovim.io) as my IDE btw.
 
 ### Continued development
 
@@ -56,6 +57,7 @@ CSS Grid with [Sass](https://sass-lang.com/). I use [neovim](https://neovim.io) 
 ### Useful resources
 
 - [CSS Tricks](https://css-tricks.com/) - This helped me for some tricky things. I really liked this site and will use it going forward.
+- [CSS Specificity Graph Generator](https://jonassebastianohlsson.com/specificity-graph/) - This is an interesting graph tool to see how horrible is my css code.
 - [The best code editor ever](https://neovim.io/)
 
 ## Author

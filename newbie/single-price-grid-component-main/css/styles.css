@@ -1,0 +1,148 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --cyan-light: hsl(179, 47%, 51%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --bright-yellow-light: hsl(71, 73%, 64%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/*------*/
+/* Base */
+/*------*/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+  padding: 1.8rem 0;
+  font-family: "Karla", sans-serif;
+  color: var(--white);
+  background-color: var(--light-gray);
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  width: 83%;
+  max-width: 640px;
+  margin: auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  flex-basis: 320px;
+  flex-grow: 1;
+  padding: min(max(1.4em, 2.6vw), 2.5rem);
+  background-color: var(--cyan);
+}
+
+.title {
+  margin: 0.4rem 0 0.4rem 0;
+}
+
+/*-------*/
+/* First */
+/*-------*/
+
+section:first-child {
+  flex-basis: 100%;
+  flex-grow: 2;
+  max-width: 640px;
+  font-size: min(max(1rem, 1.2vw), 1.14rem);
+  color: var(--grayish-blue);
+  background-color: var(--white);
+}
+
+.subtitle {
+  margin-top: 1.4rem;
+  margin-bottom: 0;
+  line-height: 1.4;
+  font-weight: 700;
+  font-size: 0.98em;
+  color: var(--bright-yellow);
+}
+
+section:first-child .title {
+  font-size: 1.28em;
+  color: var(--cyan);
+}
+
+section:first-child .description {
+  line-height: 1.8;
+  font-size: 0.86em;
+  margin-bottom: min(max(0.2em, 0.01vw), 1em);
+}
+
+/*--------*/
+/* Second */
+/*--------*/
+
+.title {
+  font-size: 1.14rem;
+}
+
+.price {
+  margin-right: 8px;
+  opacity: 1;
+  font-weight: 700;
+  font-size: 2.1rem;
+  vertical-align: middle;
+}
+
+.plan {
+  margin-bottom: 0.6em;
+}
+
+.plan + .description {
+  margin-top: 0;
+  margin-bottom: 2em;
+  opacity: 0.9;
+}
+
+.plan--light {
+  opacity: 0.8;
+  font-size: 0.95rem;
+}
+
+.cta {
+  display: block;
+  padding: 1em 0.9em 0.9em;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 700;
+  border-radius: 5px;
+  outline: 1px solid transparent;
+  color: var(--white);
+  background-color: var(--bright-yellow);
+  box-shadow: 0px 8px 8px 2px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta:hover {
+  background-color: var(--bright-yellow-light);
+  outline: 1px solid var(--bright-yellow-light);
+}
+
+/*-------*/
+/* Third */
+/*-------*/
+
+section:last-child {
+  background-color: var(--cyan-light);
+}
+
+section:last-child .description {
+  width: 22ch;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  opacity: 0.8;
+}
